@@ -1,0 +1,6 @@
+
+numpy
+cachetools
+telebot
+streamlit
+logging
