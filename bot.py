@@ -1,12 +1,13 @@
-  import telebot, json, threading, logging
-        from ai_core import HybridAI
-        from datetime import datetime
+   import telebot, json, threading, logging
+   from ai_core import HybridAI
+   from datetime import datetime
 
-        with open('config.json', 'r') as f:
-            config = json.load(f)
+   with open('config.json', 'r') as f:
+       config = json.load(f)
 
-        bot = telebot.TeleBot(config['TELEGRAM_TOKEN'])
-        ai_core = HybridAI()
+   bot = telebot.TeleBot(config['TELEGRAM_TOKEN'])
+   ai_core = HybridAI()
+
 
         logging.basicConfig(filename='errors.log', level=logging.ERROR)
 
